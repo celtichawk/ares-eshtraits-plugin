@@ -23,8 +23,10 @@
 
  9. Go to the ares-webportal/app/templates/components directory on your server and edit the profile-custom-tabs.hbs file to match the one included in the ares-webportal/app/template/components directory in the repository. This will add the traits to the web-portal profile.
 
- 10. On the web portal, choose the Admin > Setup menu and edit chargen.yml to add eshtraits to the stages section. Do this by entering "eshtraits:" below the entry for "groups:" with "help: eshtraits" beneath it. That will add the traits to the client chargen system.
+ 10. On the web portal, choose the Admin > Setup menu and edit chargen.yml to add eshtraits to the stages section. Do this by entering "eshtraits:" below the entry for "groups:" with "help: eshtraits" beneath it. That will add the traits to the client chargen system.  You will also want to remove the "sheet:" and "abilities:" sections as they correspond to FS3, which you will not be using.
  
  11. At this point, you should be able to "plugin/install eshtraits" to load the plugin from the client and redeploy the web-portal and test the commands.
+
+ 12. Go to the Admin > Setup > Enable or DIsable Plugins menu on the web portal and uncheck fs3skills and fs3combat to disable those plugins.
 
 If you run into any issues getting it set up, feel free to reach out via Discord or through GitHub.
