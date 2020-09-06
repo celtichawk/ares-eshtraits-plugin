@@ -32,3 +32,5 @@
  13. Go to the Admin > Setup > Enable or DIsable Plugins menu on the web portal and uncheck fs3skills and fs3combat to disable those plugins.
 
 If you run into any issues getting it set up, feel free to reach out via Discord or through GitHub.
+
+Thanks to Rucket82 for Sheet Template updates.
