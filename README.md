@@ -27,7 +27,7 @@
 
  11. Go to the aresmush/game/config directory on your server and create the eshtraits.yml configuration file included in the aresmush/game/config directory in the repository. This will add the config file.
  
- 12. At this point, you should be able to "plugin/install eshtraits" to load the plugin from the client and redeploy the web-portal and test the commands.
+ 12. At this point, you should be able to "load eshtraits" to load the plugin from the client and redeploy the web-portal and test the commands.
 
  13. Go to the Admin > Setup > Enable or DIsable Plugins menu on the web portal and uncheck fs3skills and fs3combat to disable those plugins.
 
