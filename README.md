@@ -16,7 +16,7 @@ Rucket@AresCentral for Sheet Template Updates
 
 Disable the FS3 plugins, as explained in [Enabling and Disabling Plugins](https://aresmush.com/tutorials/config/plugins/).
 
-In the game, run 'plugin/install https://github.com/clockworkejd/ares-eshtraits-plugin`.
+In the game, run: plugin/install https://github.com/clockworkejd/ares-eshtraits-plugin
 
 ### Updating Custom Profile and Chargen Files
 
