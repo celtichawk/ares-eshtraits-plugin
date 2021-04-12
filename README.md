@@ -1,36 +1,78 @@
-# plugins-eshtraits
- ESH Traits Plugin for Ares
+# ESH Traits Plugin for Ares
+
+## Credits
+
+Clockwork@AresCentral
+Rucket82 for Sheet Template Updates
+
+## Overview
 
  This plugin creates a series of commands for setting Powers, Skills, Advantages, and Flaws on characters. It also contains instructions on integrating these into the web portal and character generation.
 
- Instructions:
+ **NOTE:** This plugin requires the insertion of code into several areas reserved for custom web hooks. It should not cause any merge conflicts as it does not modify the core code; however, the custom files will require updating per the instructions below.
 
- 1. Copy the eshtraits directory from the aresmush/plugins directory in the repository into your aresmush/plugins directory on your server with the other plugins. This will add the plugin and its admin/user commands to the game.
+## Installation
 
- 2. Before completing the following steps, please note that if you have other custom code for profile fields or character generation, you will need to manually edit these files in order to not overwrite any of those customizations. If you do not have any other customizations, you can use these files as-is.
+Disable the FS3 plugins, as explained in [Enabling and Disabling Plugins](https://aresmush.com/tutorials/config/plugins/).
 
- 3. Go to the aresmush/plugins/profile directory on your server and edit the custom_char_fields.rb file to match the one included in the aresmush/plugins/profile/chargen directory in the repository. This will add the trait fields to the character objects.
+In the game, run 'plugin/install https://github.com/clockworkejd/ares-eshtraits-plugin`.
 
- 4. Go to the aresmush/plugins/chargen directory on your server and edit the custom_app_review.rb file to match the one included in the aresmush/plugins/profile/chargen directory in the repository. This will have the chargen system check to see if the traits are set before approval and give warning messages.
+### Updating Custom Profile and Chargen Areas
 
- 5. Go to the ares-webportal/app/components directory on your server and edit the chargen-custom.js file to match the one included in the ares-webportal/app/components directory in the repository. This will add the traits to the web-portal chargen system.
+If you do not have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for eshtraits.
 
- 6. Go to the ares-webportal/app/templates/components directory on your server and edit the chargen-custom.hbs file to match the one included in the areas-webportal/app/templates/components directory in the repository. This will add the traits to the web-portal chargen system.
+File: aresmush/plugins/profile/custom_char_fields.rb
 
- 7. Go to the ares-webportal/app/templates/components directory on your server and edit the chargen-custom-tabs.hbs file to match the one included in the ares-webportal/app/templates/components directory in the repository. This will add the traits to the web-portal chargen system.
+Use: custom_files/custom_char_fields.rb
 
- 8. Go to the ares-webportal/app/templates/components directory on your server and edit the profile-custom.hbs file to match the one included in the ares-webportal/app/template/components directory in the repository. This will add the traits to the web-portal profile.
+File: aresmush/plugins/chargen/custom_app_review.rb
 
- 9. Go to the ares-webportal/app/templates/components directory on your server and edit the profile-custom-tabs.hbs file to match the one included in the ares-webportal/app/template/components directory in the repository. This will add the traits to the web-portal profile.
+Use: custom_files/custom_app_review.rb
 
- 10. On the web portal, choose the Admin > Setup menu and edit chargen.yml to add eshtraits to the stages section. Do this by entering "eshtraits:" below the entry for "groups:" with "help: eshtraits" beneath it. That will add the traits to the client chargen system.  You will also want to remove the "sheet:" and "abilities:" sections as they correspond to FS3, which you will not be using.
+### Updating Custom Web Portal Chargen and Profile Areas
 
- 11. Go to the aresmush/game/config directory on your server and create the eshtraits.yml configuration file included in the aresmush/game/config directory in the repository. This will add the config file.
- 
- 12. At this point, you should be able to "load eshtraits" to load the plugin from the client and redeploy the web-portal and test the commands.
+File: ares-webportal/app/components/chargen-custom.js
 
- 13. Go to the Admin > Setup > Enable or DIsable Plugins menu on the web portal and uncheck fs3skills and fs3combat to disable those plugins.
+Use: custom_files/chargen-custom.js
 
-If you run into any issues getting it set up, feel free to reach out via Discord or through GitHub.
+File: ares-webportal/app/templates/components/chargen-custom.hbs
 
-Thanks to Rucket82 for Sheet Template updates.
+Use: custom_files/chargen-custom.hbs
+
+File: ares-webportal/app/templates/components/chargen-custom-tabs.hbs
+
+Use: custom_files/chargen-custom-tabs.hbs
+
+File: ares-webportal/app/templates/components/profile-custom.hbs
+
+Use: custom_files/profile-custom.hbs
+
+File: ares-webportal/app/templates/components/profile-custom-tabs.hbs
+
+Use: custom_files/profile-custom-tabs.hbs
+
+### Configuration
+
+Go to Admin > Setup menu and edit chargen.yml and replace two FS3 [chargen stages](https://aresmush.com/tutorials/config/chargen.html) with the eshtraits stage.
+
+Remove these two items:
+
+    sheet:
+      help: sheets
+    abilities:
+      help:skills
+
+Add this item below the "groups" section:
+
+    eshtraits:
+      help: eshtraits
+
+
+
+## Uninstalling
+
+Removing the plugin requires some code fiddling. See [Uninstalling Plugins](https://www.aresmush.com/tutorials/code/extras.html#uninstalling-plugins).
+
+## License
+
+Same as [AresMUSH](https://aresmush.com/license).
