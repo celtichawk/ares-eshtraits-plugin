@@ -32,6 +32,8 @@ Update With: custom_files/custom_app_review.rb
 
 ### Updating Custom Web Portal Chargen and Profile Files
 
+If you do not have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for eshtraits.
+
 File: ares-webportal/app/components/chargen-custom.js
 
 Update With: custom_files/chargen-custom.js
