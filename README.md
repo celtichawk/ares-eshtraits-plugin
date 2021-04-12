@@ -22,37 +22,37 @@ In the game, run: plugin/install https://github.com/clockworkejd/ares-eshtraits-
 
 If you do not have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for eshtraits.
 
-File: aresmush/plugins/profile/custom_char_fields.rb
+**File**: aresmush/plugins/profile/custom_char_fields.rb
 
-Update With: custom_files/custom_char_fields.rb
+**Update with**: custom_files/custom_char_fields.rb
 
-File: aresmush/plugins/chargen/custom_app_review.rb
+**File**: aresmush/plugins/chargen/custom_app_review.rb
 
-Update With: custom_files/custom_app_review.rb
+**Update with**: custom_files/custom_app_review.rb
 
 ### Updating Custom Web Portal Chargen and Profile Files
 
 If you do not have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for eshtraits.
 
-File: ares-webportal/app/components/chargen-custom.js
+**File**: ares-webportal/app/components/chargen-custom.js
 
-Update With: custom_files/chargen-custom.js
+**Update with**: custom_files/chargen-custom.js
 
-File: ares-webportal/app/templates/components/chargen-custom.hbs
+**File**: ares-webportal/app/templates/components/chargen-custom.hbs
 
-Update With: custom_files/chargen-custom.hbs
+**Update with**: custom_files/chargen-custom.hbs
 
-File: ares-webportal/app/templates/components/chargen-custom-tabs.hbs
+**File**: ares-webportal/app/templates/components/chargen-custom-tabs.hbs
 
-Update With: custom_files/chargen-custom-tabs.hbs
+**Update with**: custom_files/chargen-custom-tabs.hbs
 
-File: ares-webportal/app/templates/components/profile-custom.hbs
+**File**: ares-webportal/app/templates/components/profile-custom.hbs
 
-Update With: custom_files/profile-custom.hbs
+**Update with**: custom_files/profile-custom.hbs
 
-File: ares-webportal/app/templates/components/profile-custom-tabs.hbs
+**File**: ares-webportal/app/templates/components/profile-custom-tabs.hbs
 
-Update With: custom_files/profile-custom-tabs.hbs
+**Update with**: custom_files/profile-custom-tabs.hbs
 
 ### Configuration
 
