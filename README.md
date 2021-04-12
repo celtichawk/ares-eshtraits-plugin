@@ -10,18 +10,9 @@ Rucket@AresCentral for Sheet Template Updates
 
  This plugin creates a series of commands for setting Powers, Skills, Advantages, and Flaws on characters. It also contains instructions on integrating these into the web portal and character generation.
 
-+==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
+![Web Portal](https://github.com/ClockworkEJD/ares-eshtraits-plugin/images/ESHTraits.jpg)
 
-Clockwork        Approved        
------[ Powers ]---------------------------------------------------------------
-
------[ Skills ]---------------------------------------------------------------
-
------[ Advantages ]-----------------------------------------------------------
-
------[ Flaws ]----------------------------------------------------------------
-
-+==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
+![Client](https://github.com/ClockworkEJD/ares-eshtraits-plugin/images/ESHTraits2.jpg)
 
  **NOTE:** This plugin requires the insertion of code into several areas reserved for custom hooks. It should not cause any merge conflicts as it does not modify the core code; however, the custom files will require updating per the instructions below.
 
