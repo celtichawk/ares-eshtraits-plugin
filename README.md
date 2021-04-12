@@ -11,6 +11,7 @@ Rucket@AresCentral for Sheet Template Updates
  This plugin creates a series of commands for setting Powers, Skills, Advantages, and Flaws on characters. It also contains instructions on integrating these into the web portal and character generation.
 
 +==~~~~~====~~~~====~~~~====~~~~=====~~~~=====~~~~====~~~~====~~~~====~~~~~==+
+
 Clockwork        Approved        
 -----[ Powers ]---------------------------------------------------------------
 
