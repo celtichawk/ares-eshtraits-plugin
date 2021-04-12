@@ -3,7 +3,8 @@
 ## Credits
 
 Clockwork@AresCentral
-Rucket82 for Sheet Template Updates
+
+Rucket@AresCentral for Sheet Template Updates
 
 ## Overview
 
@@ -17,39 +18,39 @@ Disable the FS3 plugins, as explained in [Enabling and Disabling Plugins](https:
 
 In the game, run 'plugin/install https://github.com/clockworkejd/ares-eshtraits-plugin`.
 
-### Updating Custom Profile and Chargen Areas
+### Updating Custom Profile and Chargen Files
 
 If you do not have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for eshtraits.
 
 File: aresmush/plugins/profile/custom_char_fields.rb
 
-Use: custom_files/custom_char_fields.rb
+Update With: custom_files/custom_char_fields.rb
 
 File: aresmush/plugins/chargen/custom_app_review.rb
 
-Use: custom_files/custom_app_review.rb
+Update With: custom_files/custom_app_review.rb
 
-### Updating Custom Web Portal Chargen and Profile Areas
+### Updating Custom Web Portal Chargen and Profile Files
 
 File: ares-webportal/app/components/chargen-custom.js
 
-Use: custom_files/chargen-custom.js
+Update With: custom_files/chargen-custom.js
 
 File: ares-webportal/app/templates/components/chargen-custom.hbs
 
-Use: custom_files/chargen-custom.hbs
+Update With: custom_files/chargen-custom.hbs
 
 File: ares-webportal/app/templates/components/chargen-custom-tabs.hbs
 
-Use: custom_files/chargen-custom-tabs.hbs
+Update With: custom_files/chargen-custom-tabs.hbs
 
 File: ares-webportal/app/templates/components/profile-custom.hbs
 
-Use: custom_files/profile-custom.hbs
+Update With: custom_files/profile-custom.hbs
 
 File: ares-webportal/app/templates/components/profile-custom-tabs.hbs
 
-Use: custom_files/profile-custom-tabs.hbs
+Update With: custom_files/profile-custom-tabs.hbs
 
 ### Configuration
 
