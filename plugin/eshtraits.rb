@@ -49,7 +49,7 @@ module AresMUSH
                 else 
                     return FlawsCmd
                 end
-            when "sheet"
+            when "extras"
                 return SheetCmd
             end
         end
